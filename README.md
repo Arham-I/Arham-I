@@ -1,4 +1,4 @@
-### Hi there 👋, I'm Arham
+### Hi there 👋🏾, I'm Arham
 #### I'm a developer interested in everything data (pipelines, machine learning and stuff)
 ![I'm a developer interested in everything data (pipelines, machine learning and stuff)](https://github.com/Arham-I/Arham-I/blob/main/banner_anime.png)
 
