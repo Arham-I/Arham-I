@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1440"/>
+      <stop offset="0.6" stop-color="#232a6b"/>
+      <stop offset="1" stop-color="#6b3b6e"/>
+    </linearGradient>
+    <radialGradient id="burstGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fffbe0"/>
+      <stop offset="0.3" stop-color="#ffb347" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#ff8a00" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="trail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffd23f" stop-opacity="0"/>
+      <stop offset="0.4" stop-color="#ffb000"/>
+      <stop offset="1" stop-color="#fff6c0"/>
+    </linearGradient>
+    <linearGradient id="textFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff8b0"/>
+      <stop offset="0.5" stop-color="#ffd23f"/>
+      <stop offset="0.51" stop-color="#ffb000"/>
+      <stop offset="1" stop-color="#ff8a00"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <clipPath id="glassClip" clipPathUnits="userSpaceOnUse"><path d="M0 -52 C32 -52 50 -29 50 -4 C50 17 36 29 27 42 L27 54 L-27 54 L-27 42 C-36 29 -50 17 -50 -4 C-50 -29 -32 -52 0 -52 Z"/></clipPath>
+  </defs>
+
+  <!-- sky -->
+  <rect width="1280" height="320" fill="url(#sky)"/>
+
+  <g fill="#ffffff">
+    <circle cx="560" cy="30" r="1.5" opacity="0.7"/><circle cx="720" cy="18" r="1.2" opacity="0.6"/>
+    <circle cx="430" cy="22" r="1" opacity="0.5"/><circle cx="1220" cy="270" r="1.4" opacity="0.5"/>
+    <circle cx="880" cy="110" r="1.2" opacity="0.5"/><circle cx="40" cy="30" r="1.3" opacity="0.6"/>
+  </g>
+  <!-- cel-shaded clouds -->
+  <g fill="#3a3478">
+    <path d="M-20 300 Q20 250 80 268 Q110 228 170 250 Q220 222 270 262 Q320 250 340 300 Z" opacity="0.9"/>
+    <path d="M300 320 Q340 282 400 296 Q440 268 500 292 Q540 280 560 320 Z" opacity="0.8"/>
+  </g>
+  <g fill="#2b2760">
+    <path d="M-20 300 Q60 290 120 296 Q200 288 340 300 L340 320 L-20 320 Z"/>
+  </g>
+
+  <!-- impact burst rays (right side) -->
+  <g transform="translate(1100,120)">
+    <g fill="#ffd27a" opacity="0.18">
+      <polygon points="0,0 -600,180 -560,200"/>
+      <polygon points="0,0 -520,-200 -480,-220"/>
+      <polygon points="0,0 -200,-240 -160,-240"/>
+      <polygon points="0,0 60,-240 110,-240"/>
+      <polygon points="0,0 300,-160 300,-110"/>
+      <polygon points="0,0 300,40 300,90"/>
+      <polygon points="0,0 200,240 250,240"/>
+      <polygon points="0,0 -80,240 -30,240"/>
+      <polygon points="0,0 -340,240 -290,240"/>
+    </g>
+    <circle r="150" fill="url(#burstGlow)"/>
+  </g>
+
+  <!-- speed lines -->
+  <g stroke="#ffffff" stroke-linecap="round" opacity="0.4">
+    <line x1="560" y1="40" x2="900" y2="40" stroke-width="3" opacity="0.7"/>
+    <line x1="620" y1="70" x2="1000" y2="70" stroke-width="2" opacity="0.6"/>
+    <line x1="700" y1="250" x2="1020" y2="250" stroke-width="3" opacity="0.7"/>
+    <line x1="640" y1="280" x2="940" y2="280" stroke-width="2" opacity="0.55"/>
+    <line x1="760" y1="300" x2="1100" y2="300" stroke-width="4" opacity="0.5"/>
+    <line x1="1160" y1="220" x2="1280" y2="220" stroke-width="3" opacity="0.6"/>
+    <line x1="1180" y1="30" x2="1280" y2="30" stroke-width="2" opacity="0.6"/>
+  </g>
+
+  <!-- raw data: chunky cel-shaded bits -->
+  <g>
+    <text x="613" y="265" font-family="'Arial Black', Arial, sans-serif" font-weight="900" font-style="italic" font-size="22" fill="#ffd23f" stroke="#0b1a4a" stroke-width="5" paint-order="stroke" stroke-linejoin="round" transform="rotate(16 613 265)">0</text>
+    <g stroke="#0b1a4a" stroke-width="2" stroke-linejoin="round"><polygon points="635,291.36 643,296 635,300.64 627,296" fill="#ddd6fe"/><polygon points="627,296 635,300.64 635,308.64 627,304" fill="#a78bfa"/><polygon points="643,296 635,300.64 635,308.64 643,304" fill="#6d28d9"/></g>
+    <g stroke="#0b1a4a" stroke-width="2" stroke-linejoin="round"><polygon points="664,238.94 671,243 664,247.06 657,243" fill="#fde68a"/><polygon points="657,243 664,247.06 664,254.06 657,250" fill="#fbbf24"/><polygon points="671,243 664,247.06 664,254.06 671,250" fill="#b45309"/></g>
+    <text x="684" y="303" font-family="'Arial Black', Arial, sans-serif" font-weight="900" font-style="italic" font-size="26" fill="#67e8f9" stroke="#0b1a4a" stroke-width="5" paint-order="stroke" stroke-linejoin="round" transform="rotate(-15 684 303)">1</text>
+    <g stroke="#0b1a4a" stroke-width="2" stroke-linejoin="round"><polygon points="711,257.2 721,263 711,268.8 701,263" fill="#ddd6fe"/><polygon points="701,263 711,268.8 711,278.8 701,273" fill="#a78bfa"/><polygon points="721,263 711,268.8 711,278.8 721,273" fill="#6d28d9"/></g>
+    <g stroke="#0b1a4a" stroke-width="2" stroke-linejoin="round"><polygon points="732,225.94 739,230 732,234.06 725,230" fill="#fde68a"/><polygon points="725,230 732,234.06 732,241.06 725,237" fill="#fbbf24"/><polygon points="739,230 732,234.06 732,241.06 739,237" fill="#b45309"/></g>
+    <text x="763" y="306" font-family="'Arial Black', Arial, sans-serif" font-weight="900" font-style="italic" font-size="26" fill="#67e8f9" stroke="#0b1a4a" stroke-width="5" paint-order="stroke" stroke-linejoin="round" transform="rotate(-5 763 306)">0</text>
+    <g stroke="#0b1a4a" stroke-width="2" stroke-linejoin="round"><polygon points="794,256.2 804,262 794,267.8 784,262" fill="#fde68a"/><polygon points="784,262 794,267.8 794,277.8 784,272" fill="#fbbf24"/><polygon points="804,262 794,267.8 794,277.8 804,272" fill="#b45309"/></g>
+    <g stroke="#0b1a4a" stroke-width="2" stroke-linejoin="round"><polygon points="808,297.94 815,302 808,306.06 801,302" fill="#ddd6fe"/><polygon points="801,302 808,306.06 808,313.06 801,309" fill="#a78bfa"/><polygon points="815,302 808,306.06 808,313.06 815,309" fill="#6d28d9"/></g>
+    <text x="626" y="230" font-family="'Arial Black', Arial, sans-serif" font-weight="900" font-style="italic" font-size="26" fill="#67e8f9" stroke="#0b1a4a" stroke-width="5" paint-order="stroke" stroke-linejoin="round" transform="rotate(-21 626 230)">0</text>
+    <g stroke="#0b1a4a" stroke-width="2" stroke-linejoin="round"><polygon points="840,244.2 850,250 840,255.8 830,250" fill="#a5f3fc"/><polygon points="830,250 840,255.8 840,265.8 830,260" fill="#22d3ee"/><polygon points="850,250 840,255.8 840,265.8 850,260" fill="#0e7490"/></g>
+    <g stroke="#0b1a4a" stroke-width="2" stroke-linejoin="round"><polygon points="725,309.94 732,314 725,318.06 718,314" fill="#fecaca"/><polygon points="718,314 725,318.06 725,325.06 718,321" fill="#f87171"/><polygon points="732,314 725,318.06 725,325.06 732,321" fill="#b91c1c"/></g>
+    <path d="M676 215 Q676 222 683 222 Q676 222 676 229 Q676 222 669 222 Q676 222 676 215 Z" fill="#ffffff"/>
+    <path d="M800 226 Q800 232 806 232 Q800 232 800 238 Q800 232 794 232 Q800 232 800 226 Z" fill="#ffffff"/>
+    <path d="M860 275 Q860 280 865 280 Q860 280 860 285 Q860 280 855 280 Q860 280 860 275 Z" fill="#ffffff"/>
+    <path d="M600 291 Q600 296 605 296 Q600 296 600 301 Q600 296 595 296 Q600 296 600 291 Z" fill="#ffffff"/>
+    <line x1="578" y1="250" x2="594" y2="250" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+    <line x1="574" y1="282" x2="590" y2="282" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+    <line x1="608" y1="318" x2="624" y2="318" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  </g>
+
+  <!-- trail: jittery raw signal smoothing into a clean path -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M640 290 L660 272 L672 292 L690 262 L704 284 L722 250 L736 270 L752 242 L770 258 C800 238 830 230 860 214 S930 196 970 172 S1030 145 1062 140" stroke="#ff8a00" stroke-width="22" opacity="0.45" filter="url(#soft)"/>
+    <path d="M640 290 L660 272 L672 292 L690 262 L704 284 L722 250 L736 270 L752 242 L770 258 C800 238 830 230 860 214 S930 196 970 172 S1030 145 1062 140" stroke="url(#trail)" stroke-width="9"/>
+    <path d="M640 290 L660 272 L672 292 L690 262 L704 284 L722 250 L736 270 L752 242 L770 258 C800 238 830 230 860 214 S930 196 970 172 S1030 145 1062 140" stroke="#ffffff" stroke-width="2.5" opacity="0.85"/>
+  </g>
+
+  <!-- solution: anime cel-shaded lightbulb -->
+  <g>
+    <polygon points="1104.5,50.0 1095.5,50.0 1100.0,10.0" fill="#ffd23f" stroke="#0b1a4a" stroke-width="2.5" stroke-linejoin="round"/><polygon points="1141.6,62.0 1136.4,59.0 1151.0,39.7" fill="#ffd23f" stroke="#0b1a4a" stroke-width="2.5" stroke-linejoin="round"/><polygon points="1169.8,92.9 1165.3,85.1 1202.2,69.0" fill="#ffd23f" stroke="#0b1a4a" stroke-width="2.5" stroke-linejoin="round"/><polygon points="1165.3,170.9 1169.8,163.1 1202.2,187.0" fill="#ffd23f" stroke="#0b1a4a" stroke-width="2.5" stroke-linejoin="round"/><polygon points="1136.4,197.0 1141.6,194.0 1151.0,216.3" fill="#ffd23f" stroke="#0b1a4a" stroke-width="2.5" stroke-linejoin="round"/><polygon points="1095.5,206.0 1104.5,206.0 1100.0,246.0" fill="#ffd23f" stroke="#0b1a4a" stroke-width="2.5" stroke-linejoin="round"/><polygon points="1058.4,194.0 1063.6,197.0 1049.0,216.3" fill="#ffd23f" stroke="#0b1a4a" stroke-width="2.5" stroke-linejoin="round"/><polygon points="1030.2,163.1 1034.7,170.9 997.8,187.0" fill="#ffd23f" stroke="#0b1a4a" stroke-width="2.5" stroke-linejoin="round"/><polygon points="1022.0,125.0 1022.0,131.0 998.0,128.0" fill="#ffd23f" stroke="#0b1a4a" stroke-width="2.5" stroke-linejoin="round"/><polygon points="1034.7,85.1 1030.2,92.9 997.8,69.0" fill="#ffd23f" stroke="#0b1a4a" stroke-width="2.5" stroke-linejoin="round"/><polygon points="1063.6,59.0 1058.4,62.0 1049.0,39.7" fill="#ffd23f" stroke="#0b1a4a" stroke-width="2.5" stroke-linejoin="round"/>
+  </g>
+  <g transform="translate(1100,128) rotate(18)" stroke-linejoin="round">
+    <circle r="70" fill="#ffd23f" opacity="0.35" filter="url(#soft)"/>
+    <path d="M0 -52 C32 -52 50 -29 50 -4 C50 17 36 29 27 42 L27 54 L-27 54 L-27 42 C-36 29 -50 17 -50 -4 C-50 -29 -32 -52 0 -52 Z" fill="#fff7c2"/>
+    <path d="M6 -51 C34 -48 50 -27 50 -4 C50 17 36 29 27 42 L27 54 L12 54 L12 42 C22 28 36 14 36 -6 C36 -28 24 -44 6 -51 Z" fill="#ffc93c"/>
+    <path d="M24 -44 C42 -34 50 -18 50 -4 C50 17 36 29 27 42 L27 54 L20 54 L20 42 C30 28 42 14 42 -4 C42 -20 36 -34 24 -44 Z" fill="#f59e0b"/>
+    <path d="M0 -52 C32 -52 50 -29 50 -4 C50 17 36 29 27 42 L27 54 L-27 54 L-27 42 C-36 29 -50 17 -50 -4 C-50 -29 -32 -52 0 -52 Z" fill="none" stroke="#0b1a4a" stroke-width="7"/>
+    <path d="M-34 -14 C-34 -34 -18 -44 -2 -45 C-18 -38 -25 -28 -26 -12 Z" fill="#ffffff"/>
+    <circle cx="-33" cy="2" r="4.5" fill="#ffffff"/>
+    <path d="M-14 42 L-14 16 L-7 2 L0 16 L7 2 L14 16 L14 42" fill="none" stroke="#0b1a4a" stroke-width="8" stroke-linecap="round"/>
+    <path d="M-14 42 L-14 16 L-7 2 L0 16 L7 2 L14 16 L14 42" fill="none" stroke="#ff7a00" stroke-width="4" stroke-linecap="round"/>
+    <g stroke="#0b1a4a" stroke-width="5">
+      <rect x="-28" y="54" width="56" height="13" rx="4" fill="#a5b4fc"/>
+      <rect x="-25" y="67" width="50" height="12" rx="4" fill="#818cf8"/>
+      <path d="M-14 79 L14 79 L7 90 L-7 90 Z" fill="#4f46e5"/>
+    </g>
+    <path d="M-22 58 L-6 58" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g>
+    <path d="M1188 49 Q1188 60 1199 60 Q1188 60 1188 71 Q1188 60 1177 60 Q1188 60 1188 49 Z" fill="#ffffff"/><path d="M1016 66 Q1016 74 1024 74 Q1016 74 1016 82 Q1016 74 1008 74 Q1016 74 1016 66 Z" fill="#ffffff"/><path d="M1200 179 Q1200 186 1207 186 Q1200 186 1200 193 Q1200 186 1193 186 Q1200 186 1200 179 Z" fill="#ffd23f"/><path d="M1060 24 Q1060 30 1066 30 Q1060 30 1060 36 Q1060 30 1054 30 Q1060 30 1060 24 Z" fill="#ffffff"/>
+  </g>
+
+  <!-- headline: chunky, slanted, outlined -->
+  <g transform="translate(64,24) skewX(-10)" font-family="'Arial Black', 'Helvetica Neue', Impact, Arial, sans-serif" font-weight="900" font-style="italic" stroke-linejoin="round">
+    <g fill="#0b1a4a" stroke="#0b1a4a" stroke-width="12" transform="translate(6,6)">
+      <text x="30" y="124" font-size="54">FROM RAW DATA</text>
+      <text x="30" y="194" font-size="54">TO <tspan font-size="66">REAL</tspan> SOLUTIONS.</text>
+    </g>
+    <g fill="url(#textFill)" stroke="#0b1a4a" stroke-width="9" paint-order="stroke">
+      <text x="30" y="124" font-size="54" fill="#ffffff">FROM RAW DATA</text>
+      <text x="30" y="194" font-size="54">TO <tspan font-size="66">REAL</tspan> SOLUTIONS.</text>
+    </g>
+  </g>
+
+  <!-- comic border -->
+  <rect x="3" y="3" width="1274" height="314" fill="none" stroke="#05081f" stroke-width="6"/>
+</svg>
